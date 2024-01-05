@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contatos.css">
+</head>
+<body> 
+    <header>
+    <img id="logo" src="./downloadlogo.png">
+    <nav>
+        <ul>
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+            <a href="./contatos.html">
+                <li>Contatos</li>
+            </a>
+            <a href="./fotos.html">
+                <li>Fotos</li>
+            </a>
+            <a href="./comentarios.html">                    
+                <li>Comentários</li>
+            </a>
+        </ul>
+    </nav>
+</header>
+
+<div id="banner"> 
+</div>
+<body>
+    <h1>Entre em Contato</h1>
+    <div id="formulario">
+
+        <form action="processar_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10}" required>
+            <small>Informe o telefone no formato:+55 (99)99999-9999</small>
+                <br>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+            <br>
+        </form>
+        <button class="button">Enviar</button>
+        
+    </div>
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="./downloadlogo.png">
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Gabriel Rodrigues</span>
+        
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contatos.html">
+                    <li>Contatos</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">                    
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
